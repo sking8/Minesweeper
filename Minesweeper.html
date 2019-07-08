@@ -1,0 +1,56 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Mine Sweeper</title>
+	<link rel="stylesheet" href="a3.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="a3.js"></script>
+</head>
+
+<body>
+	<div id="setting">
+		<div id='diff-chooser'>
+			<span>Difficulty: </span>
+			<select id='difficulty'>
+				<option value="Beginner">Beginner</option>
+				<option value="Intermediate">Intermediate</option>
+				<option value="Expert">Expert</option>
+				<option value="Custom">Custom</option>
+			</select>
+		</div>
+
+		<div class="slide-container">
+			<span>Width:</span>
+			<input type="range" min="8" max="40" value="8" class="slider" id="width">
+			<span>Height:</span>
+			<input type="range" min="8" max="30" value="8" class="slider" id="height">
+			<span>Number of Mines:</span>
+			<input type="range" min="1" max="80" value="1" class="slider" id="num-mines">
+		</div>
+	</div>
+
+	<h1 id='title'>Mine Sweeper</h1>
+
+
+	
+	<div id="board-header">
+		<span id="left-mines" class="board-info">10</span>
+		<div id="reset-face"><img src="smile-regular.svg"></div>
+		<span id="timer" class="board-info">0</span>
+	</div>
+	<div id="board" class="grid-container">
+		
+	</div>
+
+	<h1>Best Scores</h1>
+	<div id='score-container'></div>
+
+
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,114 @@
+body{
+	margin: 0px;
+}
+
+h1{
+	text-align: center;
+}
+
+#diff-chooser{
+	margin-left: 1em;
+	display: flex;
+}
+
+#difficulty{
+	border-radius: 5px;
+	border-style: none;
+	background-color: white;
+	margin-left: 1em;
+}
+
+.slide-container {
+	width: 100%;
+	display: none;
+}
+
+.slide-container>span{
+	margin-left: 1em;
+}
+
+.slider {
+	-webkit-appearance: none;  /* Override default CSS styles */
+	border-radius: 5px;
+	appearance: none;
+	width: 10%; /* Full-width */
+	height: 10px; /* Specified height */
+	background: #d3d3d3; /* Grey background */
+	outline: none; /* Remove outline */
+	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+	-webkit-transition: .2s; /* 0.2 seconds transition on hover */
+	transition: opacity .2s;
+	display: inline;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	width: 10px; /* Set a specific slider handle width */
+	height: 10px; /* Slider handle height */
+	background: #4CAF50; /* Green background */
+	border-radius: 50%;
+	cursor: pointer; /* Cursor on hover */
+}
+
+
+.grid-container {
+	display: table;
+	margin:auto;
+	/*  grid-template-columns: auto auto auto;*/  
+	background-color: #2196F3;
+	width: 144px;
+	height: 144px;
+
+}
+
+.grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	border-style: outset;
+	text-align: center;
+	border-width: 2px;
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	user-select: none; /* CSS3 (little to no support) */
+	-ms-user-select: none; /* IE 10+ */
+	-moz-user-select: none; /* Gecko (Firefox) */
+	-webkit-user-select: none; /* Webkit (Safari, Chrome) */
+}
+
+.score-item{
+	margin:auto;
+}
+
+#score-container{
+	margin: auto;
+    display: table;
+}
+
+
+#setting{
+	background-color: gray;
+	display: flex;
+	padding: 0.5em 0px;
+}
+
+#board-header{
+	margin: auto;
+	display: flex;
+	background-color: #2196F3;
+}
+
+#reset-face{
+	margin:auto;
+	width: 20px;
+	border-style: outset;
+	cursor: pointer;
+	background-color: white;
+}
+
+.board-info{
+	background-color: white;
+	border-style: groove;
+	font-size: larger;
+}
